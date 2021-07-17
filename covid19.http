@@ -1,0 +1,64 @@
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}
+
+###
+
+GET http://localhost:3000/states/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjI2NTA2MTc4fQ.QN5GsTrFvI6SymPUuS49OxVBw0lkvktkAr0C41a3l2Q
+###
+
+GET http://localhost:3000/states/5/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjI2NTA2MTc4fQ.QN5GsTrFvI6SymPUuS49OxVBw0lkvktkAr0C41a3l2Q
+###
+
+POST http://localhost:3000/districts/
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjI2NTA2MTc4fQ.QN5GsTrFvI6SymPUuS49OxVBw0lkvktkAr0C41a3l2Q
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+###
+GET http://localhost:3000/districts/5/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjI2NTA2MTc4fQ.QN5GsTrFvI6SymPUuS49OxVBw0lkvktkAr0C41a3l2Q
+
+###
+
+DELETE  http://localhost:3000/districts/7/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjI2NTA2MTc4fQ.QN5GsTrFvI6SymPUuS49OxVBw0lkvktkAr0C41a3l2Q
+
+###
+
+PUT  http://localhost:3000/districts/6/
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjI2NTA2MTc4fQ.QN5GsTrFvI6SymPUuS49OxVBw0lkvktkAr0C41a3l2Q
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+###
+
+GET  http://localhost:3000/states/4/stats/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjI2NTA2MTc4fQ.QN5GsTrFvI6SymPUuS49OxVBw0lkvktkAr0C41a3l2Q
+
+###
+
+
+
+
